@@ -1,12 +1,17 @@
 import './App.css';
-import Title from './components/Title';
+import About from './components/about';
+import { ThemeProvider } from './components/theme-provider';
+import Title from './components/title';
 
 function App() {
   return (
     <>
-      <div>
-        <Title></Title>
-      </div>
+      <ThemeProvider defaultTheme="dark">
+        <main className="flex flex-col justify-center mt-16">
+          <Title></Title>
+          <About></About>
+        </main>
+      </ThemeProvider>
     </>
   );
 }
