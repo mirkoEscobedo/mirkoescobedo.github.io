@@ -1,5 +1,6 @@
 import './App.css';
 import About from './components/about';
+import Skills from './components/skills';
 import { ThemeProvider } from './components/theme-provider';
 import Title from './components/title';
 
@@ -10,6 +11,7 @@ function App() {
         <main className="flex flex-col justify-center mt-16">
           <Title></Title>
           <About></About>
+          <Skills></Skills>
         </main>
       </ThemeProvider>
     </>
