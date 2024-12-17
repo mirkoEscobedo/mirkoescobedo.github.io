@@ -1,6 +1,7 @@
 import ProjectCard from './project-card';
 import thingsDownloaderVideo from './../assets/final_cut.mp4';
 import thingsDownloaderBackEndImg from './../assets/1733909314849.jpg';
+import portfolioImage from './../assets/portfolio.png';
 
 interface Project {
   title?: string;
@@ -39,12 +40,30 @@ const thingsDownloader: Project = {
   techList: ['React', 'Typescript', 'Tailwind CSS', 'CSS', 'HTML5'],
 };
 
+const portfolio: Project = {
+  title: 'Portfolio',
+  subtitle: 'Dec 2024 - Present',
+  description:
+    'A portfolio made as practice the day before a technical interview 17/12/24 - To be uploaded on githubpages soon..ish.',
+  githubLink: 'https://github.com/mirkoEscobedo/portfolio',
+  image: portfolioImage,
+  techList: ['React', 'Typescript', 'Shadcn/ui', 'Tailwind CSS', 'CSS'],
+};
+
 const Projects: React.FC = () => {
   return (
     <>
       <section className="mt-4">
         <h2 className="font-bold text-lg mb-2">🖥️ My Projects</h2>
         <div className=" grid grid-cols-1 gap-2 sm:grid-cols-2">
+          <ProjectCard
+            title={portfolio.title}
+            subtitle={portfolio.subtitle}
+            description={portfolio.description}
+            githubLink={portfolio.githubLink}
+            techList={portfolio.techList}
+            image={portfolio.image}
+          ></ProjectCard>
           <ProjectCard
             title={thingsDBackend.title}
             subtitle={thingsDBackend.subtitle}

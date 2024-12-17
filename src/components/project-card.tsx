@@ -54,18 +54,24 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         {children}
         {techList && <TechList tech={techList}></TechList>}
       </CardContent>
-      <CardContent className="p-0 mx-2 mb-2 justify-end">
-        {websiteLink && (
-          <Badge className="h-8 mr-2 mt-2" variant={'outline'}>
-            Website
-          </Badge>
-        )}
-        {link && (
-          <Badge className="h-8 mr-2 mt-2" variant={'outline'}>
-            <Github className="mr-1"></Github>GitHub
-          </Badge>
-        )}
-      </CardContent>
+      <div className="justify-self-end">
+        <CardContent className="p-0 mx-2 mb-2">
+          {websiteLink && (
+            <a href={websiteLink}>
+              <Badge className="h-8 mr-2 mt-2" variant={'outline'}>
+                Website
+              </Badge>
+            </a>
+          )}
+          {link && (
+            <a href={link}>
+              <Badge className="h-8 mr-2 mt-2" variant={'outline'}>
+                <Github className="mr-1"></Github>GitHub
+              </Badge>
+            </a>
+          )}
+        </CardContent>
+      </div>
     </Card>
   );
 };
