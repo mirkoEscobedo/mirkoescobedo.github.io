@@ -11,6 +11,10 @@ import HTML5 from './html';
 import Vite from './vite';
 import Github from './github';
 import Git from './git';
+import Flutter from './flutter';
+import Dart from './dart';
+import Supabase from './supabase';
+import PostgreSQL from './postgresql';
 
 const Skills: React.FC = () => {
   return (
@@ -34,6 +38,9 @@ const Skills: React.FC = () => {
             <Expressjs className="mr-1"></Expressjs>Express
           </Badge>
           <Badge className="h-8 mr-2 mt-2" variant={'outline'}>
+            <PostgreSQL className="mr-1"></PostgreSQL>PostgreSQL
+          </Badge>
+          <Badge className="h-8 mr-2 mt-2" variant={'outline'}>
             <TailwindCSS className="mr-1"></TailwindCSS>Tailwind
           </Badge>
           <Badge className="h-8 mr-2 mt-2" variant={'outline'}>
@@ -53,6 +60,15 @@ const Skills: React.FC = () => {
           </Badge>
           <Badge className="h-8 mr-2 mt-2" variant={'outline'}>
             <Github className="mr-1"></Github>GitHub
+          </Badge>
+          <Badge className="h-8 mr-2 mt-2" variant={'outline'}>
+            <Flutter className="mr-1"></Flutter>Flutter (W.I.P.)
+          </Badge>
+          <Badge className="h-8 mr-2 mt-2" variant={'outline'}>
+            <Dart className="mr-1"></Dart>Dart (W.I.P.)
+          </Badge>
+          <Badge className="h-8 mr-2 mt-2" variant={'outline'}>
+            <Supabase className="mr-1"></Supabase>Supabase (W.I.P.)
           </Badge>
         </div>
       </section>
