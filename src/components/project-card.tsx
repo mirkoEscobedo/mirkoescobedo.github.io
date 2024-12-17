@@ -32,7 +32,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   children,
 }) => {
   return (
-    <Card>
+    <Card className="flex flex-col justify-between">
       <a href={link} target="_blank">
         {video && (
           <video
@@ -49,11 +49,12 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
       <CardTitle className="mt-4 mx-2">{title}</CardTitle>
       <CardHeader className="mt-2 mx-2 p-0">{subtitle}</CardHeader>
       <CardDescription className="mt-2 mx-2">{description}</CardDescription>
-      <CardContent className='p-0 m-1'>
+
+      <CardContent className="p-0 m-1 ">
         {children}
         {techList && <TechList tech={techList}></TechList>}
       </CardContent>
-      <CardContent className="p-0 mx-2 mb-2">
+      <CardContent className="p-0 mx-2 mb-2 justify-end">
         {websiteLink && (
           <Badge className="h-8 mr-2 mt-2" variant={'outline'}>
             Website
