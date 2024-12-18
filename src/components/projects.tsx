@@ -1,13 +1,14 @@
 import ProjectCard from './project-card';
 import thingsDownloaderVideo from './../assets/final_cut.mp4';
-import thingsDownloaderBackEndImg from './../assets/1733909314849.jpg';
 import portfolioImage from './../assets/portfolio.png';
+import backEndVideo from './../assets/backend_works - Made with Clipchamp.mp4';
 
 interface Project {
   title?: string;
   subtitle?: string;
   description?: string;
   githubLink?: string;
+  websiteLink?: string;
   techList?: Array<string>;
   image?: string;
   video?: string;
@@ -19,7 +20,7 @@ const thingsDBackend: Project = {
   description:
     "Backend for 'Things' downloader, enables the download of all media from a 4chan thread bypassing cors and allowing single and multiple download/conversion of videos in a comfy way.",
   githubLink: 'https://github.com/mirkoEscobedo/download-service-backend',
-  image: thingsDownloaderBackEndImg,
+  video: backEndVideo,
   techList: [
     'Node.js',
     'Typescript',
@@ -44,8 +45,9 @@ const portfolio: Project = {
   title: 'Portfolio',
   subtitle: 'Dec 2024 - Present',
   description:
-    'A portfolio made as practice the day before a technical interview 17/12/24 - To be uploaded on githubpages soon..ish.',
+    'A portfolio made as practice the day before a technical interview 17/12/24.',
   githubLink: 'https://github.com/mirkoEscobedo/portfolio',
+  websiteLink: 'https://mirkoescobedo.github.io/',
   image: portfolioImage,
   techList: ['React', 'Typescript', 'Shadcn/ui', 'Tailwind CSS', 'CSS'],
 };
@@ -61,6 +63,7 @@ const Projects: React.FC = () => {
             subtitle={portfolio.subtitle}
             description={portfolio.description}
             githubLink={portfolio.githubLink}
+            websiteLink={portfolio.websiteLink}
             techList={portfolio.techList}
             image={portfolio.image}
           ></ProjectCard>
