@@ -38,7 +38,7 @@ export const portfolio: Project = {
   title: 'Portfolio',
   subtitle: 'Dec 2024 - Present',
   description:
-    'A portfolio made as practice the day before a technical interview 17/12/24.',
+    'A portfolio made as practice the day before a technical interview 17/12/24 - and completed it after the interview of the 18 it seems that it went well 🤞.',
   githubLink: 'https://github.com/mirkoEscobedo/portfolio',
   websiteLink: 'https://mirkoescobedo.github.io/',
   image: portfolioImage,

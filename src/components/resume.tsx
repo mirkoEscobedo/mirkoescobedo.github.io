@@ -18,6 +18,8 @@ const Resume: React.FC<ResumeProps> = ({ resumeList, title }) => {
             date={card.date}
             subtitle={card.subtitle}
             title={card.title}
+            description={card.description}
+            link={card.link}
           ></WorkCard>
         ))}
       </section>
