@@ -12,7 +12,7 @@ function App() {
   return (
     <>
       <ThemeProvider defaultTheme="dark">
-        <main className="flex flex-col justify-center mt-16 mb-16">
+        <main className="flex flex-col justify-center mt-16 mb-32">
           <Title></Title>
           <About></About>
           <Skills></Skills>
