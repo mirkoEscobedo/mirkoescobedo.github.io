@@ -8,7 +8,6 @@ const Title: React.FC = () => {
         <div className="flex flex-col">
           <span className="flex gap-2">
             <h1 className="text-6xl font-bold">Hi, I'm Mirko </h1>
-            
             <img src={salutingFace} className="h-16"></img>
           </span>
           <p className=" text-2xl">
