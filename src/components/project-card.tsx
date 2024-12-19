@@ -34,17 +34,20 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   return (
     <Card className="flex flex-col justify-between">
       <a href={link} target="_blank">
-        {video && (
-          <video
-            src={video}
-            playsInline
-            autoPlay
-            muted
-            loop
-            className="object-cover"
-          ></video>
-        )}
-        {image && <img src={image} alt={title} className="object-cover"></img>}
+        {video
+          ? video && (
+              <video
+                src={video}
+                playsInline
+                autoPlay
+                muted
+                loop
+                className="object-cover"
+              ></video>
+            )
+          : image && (
+              <img src={image} alt={title} className="object-cover"></img>
+            )}
       </a>
       <CardTitle className="mt-4 mx-2">{title}</CardTitle>
       <CardHeader className="mt-2 mx-2 p-0">{subtitle}</CardHeader>
