@@ -1,10 +1,11 @@
 import { Project, ResumeCard } from './typedef';
 import thingsDownloaderVideo from './../assets/final_cut.mp4';
-import portfolioImage from './../assets/portfolio.png';
 import lagrangeIcon from './../assets/6829.png';
 import develhopeLogo from './../assets/develhope_logo.jpg';
 import googleLogo from './../assets/google.svg';
 import backEndVideo from './../assets/backend_works.mp4';
+import facchinettiLogo from './../assets/ff.png';
+import portfolioVideo from './../assets/portfolio_video.mp4';
 
 export const thingsDBackend: Project = {
   title: "'THINGS' Downloader - BackEnd",
@@ -31,7 +32,7 @@ export const thingsDownloader: Project = {
     "The front-end of the 'Things' downloader team project done while in Develhope the purpose of this site is allowing the download and conversion of all media in a thread either one by one or all at the same time; will be refactored as a progressive web app.",
   githubLink: 'https://github.com/develhope/FS30-Team1-Project2',
   video: thingsDownloaderVideo,
-  techList: ['React', 'Typescript', 'Tailwind CSS', 'CSS', 'HTML5'],
+  techList: ['React', 'Typescript', 'Tailwind CSS', 'CSS', 'HTML5', 'Vite'],
 };
 
 export const portfolio: Project = {
@@ -41,9 +42,15 @@ export const portfolio: Project = {
     'A portfolio made as practice the day before a technical interview 17/12/24 - and completed it after the interview of the 18 it seems that it went well 🤞.',
   githubLink: 'https://github.com/mirkoEscobedo/portfolio',
   websiteLink: 'https://mirkoescobedo.github.io/',
-  image: portfolioImage,
-  techList: ['React', 'Typescript', 'Shadcn/ui', 'Tailwind CSS', 'CSS'],
+  video: portfolioVideo,
+  techList: ['React', 'Typescript', 'Shadcn/ui', 'Tailwind CSS', 'CSS', 'Vite'],
 };
+
+export const projectCards: Array<Project> = [
+  portfolio,
+  thingsDBackend,
+  thingsDownloader,
+];
 
 const googleData: ResumeCard = {
   title: 'Google Data Analytics',
@@ -74,8 +81,8 @@ const facchinetti: ResumeCard = {
   subtitle: 'IT Support Full-time',
   date: 'Aug 2018 - Dec 2024',
   description:
-    'I covered the position of IT Support: handling hardware: workshop laptops/machines deployment and maintenace, softwares: OS and Google Workspace deployment and use',
-  icon: '',
+    'I covered the position of IT Support handling hardware/software: workshop laptops/machines deployment and maintenace, Google Workspace support and use',
+  icon: facchinettiLogo,
 };
 
 export const workResumeList: Array<ResumeCard> = [facchinetti];
