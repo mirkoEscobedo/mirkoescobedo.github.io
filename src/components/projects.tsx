@@ -25,5 +25,5 @@ const Projects: React.FC = () => {
     </>
   );
 };
-//should refactor this with objects and shit... later... possibly
+
 export default Projects;
