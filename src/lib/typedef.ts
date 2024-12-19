@@ -1,3 +1,4 @@
+
 export interface Project {
   title?: string;
   subtitle?: string;
@@ -16,4 +17,11 @@ export interface ResumeCard {
   date?: string;
   description?: string;
   link?: string;
+}
+
+export interface ProfileLinks {
+  github: string,
+  linkedin: string,
+  instagram: string,
+  x: string,
 }

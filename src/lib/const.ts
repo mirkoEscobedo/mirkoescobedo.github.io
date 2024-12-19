@@ -1,4 +1,4 @@
-import { Project, ResumeCard } from './typedef';
+import { ProfileLinks, Project, ResumeCard } from './typedef';
 import thingsDownloaderVideo from './../assets/final_cut.mp4';
 import lagrangeIcon from './../assets/6829.png';
 import develhopeLogo from './../assets/develhope_logo.jpg';
@@ -92,3 +92,10 @@ export const educationList: Array<ResumeCard> = [
   googleData,
   lagrange,
 ];
+
+export const profileLinks: ProfileLinks = {
+  github: 'https://github.com/mirkoEscobedo',
+  x: 'https://x.com/IMRBYANH',
+  instagram: 'https://www.instagram.com/mirkoescobedo/',
+  linkedin: 'https://www.linkedin.com/in/mirko-antonio-e-3922a932a/',
+};
