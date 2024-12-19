@@ -1,5 +1,6 @@
 import './App.css';
 import About from './components/about';
+import NavBar from './components/nav_button';
 import Projects from './components/projects';
 import Resume from './components/resume';
 import Skills from './components/skills';
@@ -21,6 +22,7 @@ function App() {
           ></Resume>
           <Resume title="🎓 Education" resumeList={educationList}></Resume>
           <Projects></Projects>
+          <NavBar></NavBar>
         </main>
       </ThemeProvider>
     </>
