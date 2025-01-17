@@ -6,6 +6,7 @@ import googleLogo from './../assets/google.svg';
 import backEndVideo from './../assets/backend_works.mp4';
 import facchinettiLogo from './../assets/ff.png';
 import portfolioVideo from './../assets/portfolio_video.mp4';
+import avvaleLogo from './../assets/avvale_logo.jpg';
 
 export const thingsDBackend: Project = {
   title: "'THINGS' Downloader - BackEnd",
@@ -37,9 +38,9 @@ export const thingsDownloader: Project = {
 
 export const portfolio: Project = {
   title: 'Portfolio',
-  subtitle: 'Dec 2024 - Present',
+  subtitle: 'Dec 2024 - Dec 2024',
   description:
-    'A portfolio made as practice the day before a technical interview 17/12/24 - and completed it after the interview of the 18 it seems that it went well 🤞.',
+    'A portfolio made as practice the day before a technical interview 17/12/24 - and completed it after the interview of the 18 it seems that it went well 🤞. - UPDATE: it indeed went well got the position',
   githubLink: 'https://github.com/mirkoEscobedo/portfolio',
   websiteLink: 'https://mirkoescobedo.github.io/',
   video: portfolioVideo,
@@ -51,6 +52,13 @@ export const projectCards: Array<Project> = [
   thingsDBackend,
   thingsDownloader,
 ];
+const avvale: ResumeCard = {
+  title: 'Avvale',
+  subtitle: 'Jr. Full-Stack Developer',
+  date: 'Jan 2025 - Present',
+  link: 'https://www.avvale.com/it/',
+  icon: avvaleLogo,
+};
 
 const googleData: ResumeCard = {
   title: 'Google Data Analytics',
@@ -85,7 +93,7 @@ const facchinetti: ResumeCard = {
   icon: facchinettiLogo,
 };
 
-export const workResumeList: Array<ResumeCard> = [facchinetti];
+export const workResumeList: Array<ResumeCard> = [avvale, facchinetti];
 
 export const educationList: Array<ResumeCard> = [
   develhope,
