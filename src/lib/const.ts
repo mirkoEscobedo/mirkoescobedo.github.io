@@ -30,7 +30,7 @@ export const thingsDownloader: Project = {
   title: "'THINGS' Downloader - FrontEnd",
   subtitle: 'Oct 2024 - Dec 2024',
   description:
-    "The front-end of the 'Things' downloader team project done while in Develhope the purpose of this site is allowing the download and conversion of all media in a thread either one by one or all at the same time; will be refactored as a progressive web app.",
+    "The front-end of the 'Things' downloader team project done while in Develhope the purpose of this site is allowing the download and conversion of all media in a thread either one by one or all at the same time; will be refactored as a progressive web app. - UPDATE 4chan changed their API but didn't comunicate the change RIP now it has to be remade as a PWA - UPDATE 4chan changed their API but didn't comunicate the change RIP now it has to be remade as a PWA",
   githubLink: 'https://github.com/develhope/FS30-Team1-Project2',
   video: thingsDownloaderVideo,
   techList: ['React', 'Typescript', 'Tailwind CSS', 'CSS', 'HTML5', 'Vite'],
