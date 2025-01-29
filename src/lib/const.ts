@@ -6,6 +6,7 @@ import googleLogo from './../assets/google.svg';
 import backEndVideo from './../assets/backend_works.mp4';
 import facchinettiLogo from './../assets/ff.png';
 import portfolioVideo from './../assets/portfolio_video.mp4';
+import avvaleLogo from './../assets/avvale_logo.jpg';
 
 export const thingsDBackend: Project = {
   title: "'THINGS' Downloader - BackEnd",
@@ -29,17 +30,17 @@ export const thingsDownloader: Project = {
   title: "'THINGS' Downloader - FrontEnd",
   subtitle: 'Oct 2024 - Dec 2024',
   description:
-    "The front-end of the 'Things' downloader team project done while in Develhope the purpose of this site is allowing the download and conversion of all media in a thread either one by one or all at the same time; will be refactored as a progressive web app.",
-  githubLink: 'https://github.com/develhope/FS30-Team1-Project2',
+    "The front-end of the 'Things' downloader team project done while in Develhope the purpose of this site is allowing the download and conversion of all media in a thread either one by one or all at the same time; Now a PWA, next update will use web workers to do compute intensive conversion on the browser",
+  githubLink: 'https://github.com/mirkoEscobedo/things-downloader',
   video: thingsDownloaderVideo,
   techList: ['React', 'Typescript', 'Tailwind CSS', 'CSS', 'HTML5', 'Vite'],
 };
 
 export const portfolio: Project = {
   title: 'Portfolio',
-  subtitle: 'Dec 2024 - Present',
+  subtitle: 'Dec 2024 - Dec 2024',
   description:
-    'A portfolio made as practice the day before a technical interview 17/12/24 - and completed it after the interview of the 18 it seems that it went well 🤞.',
+    'A portfolio made as practice the day before a technical interview 17/12/24 - and completed it after the interview of the 18 it seems that it went well 🤞. - UPDATE: told you it indeed went well, I got the position',
   githubLink: 'https://github.com/mirkoEscobedo/portfolio',
   websiteLink: 'https://mirkoescobedo.github.io/',
   video: portfolioVideo,
@@ -51,6 +52,13 @@ export const projectCards: Array<Project> = [
   thingsDBackend,
   thingsDownloader,
 ];
+const avvale: ResumeCard = {
+  title: 'Avvale',
+  subtitle: 'Jr. Full-Stack Developer',
+  date: 'Jan 2025 - Present',
+  link: 'https://www.avvale.com/it/',
+  icon: avvaleLogo,
+};
 
 const googleData: ResumeCard = {
   title: 'Google Data Analytics',
@@ -85,7 +93,7 @@ const facchinetti: ResumeCard = {
   icon: facchinettiLogo,
 };
 
-export const workResumeList: Array<ResumeCard> = [facchinetti];
+export const workResumeList: Array<ResumeCard> = [avvale, facchinetti];
 
 export const educationList: Array<ResumeCard> = [
   develhope,
