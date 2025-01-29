@@ -30,8 +30,8 @@ export const thingsDownloader: Project = {
   title: "'THINGS' Downloader - FrontEnd",
   subtitle: 'Oct 2024 - Dec 2024',
   description:
-    "The front-end of the 'Things' downloader team project done while in Develhope the purpose of this site is allowing the download and conversion of all media in a thread either one by one or all at the same time; will be refactored as a progressive web app. - UPDATE 4chan changed their API but didn't comunicate the change RIP now it has to be remade as a PWA - UPDATE 4chan changed their API but didn't comunicate the change RIP now it has to be remade as a PWA",
-  githubLink: 'https://github.com/develhope/FS30-Team1-Project2',
+    "The front-end of the 'Things' downloader team project done while in Develhope the purpose of this site is allowing the download and conversion of all media in a thread either one by one or all at the same time; Now a PWA, next update will use web workers to do compute intensive conversion on the browser",
+  githubLink: 'https://github.com/mirkoEscobedo/things-downloader',
   video: thingsDownloaderVideo,
   techList: ['React', 'Typescript', 'Tailwind CSS', 'CSS', 'HTML5', 'Vite'],
 };
@@ -40,7 +40,7 @@ export const portfolio: Project = {
   title: 'Portfolio',
   subtitle: 'Dec 2024 - Dec 2024',
   description:
-    'A portfolio made as practice the day before a technical interview 17/12/24 - and completed it after the interview of the 18 it seems that it went well 🤞. - UPDATE: it indeed went well got the position',
+    'A portfolio made as practice the day before a technical interview 17/12/24 - and completed it after the interview of the 18 it seems that it went well 🤞. - UPDATE: told you it indeed went well, I got the position',
   githubLink: 'https://github.com/mirkoEscobedo/portfolio',
   websiteLink: 'https://mirkoescobedo.github.io/',
   video: portfolioVideo,
